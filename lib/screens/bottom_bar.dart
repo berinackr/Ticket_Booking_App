@@ -9,6 +9,21 @@ class BottomBar extends StatefulWidget {
 }
 
 class _BottomBarState extends State<BottomBar> {
+  int _selectedIndex = 0;
+  static final List<Widget>_widgetOptions =<Widget>[
+    const Text("Home"),
+    const Text("Search"),
+    const Text("Tickets"),
+    const Text("Profile")
+  ];
+
+  void _onItemTapped(int index){
+    setState(() {
+      _selectedIndex = index;
+    });
+    //print('Tapped index is ${_selectedIndex}');
+    //print("Tapped index is " + _selectedIndex.toString());
+  }
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -16,13 +31,16 @@ class _BottomBarState extends State<BottomBar> {
         title: Text("my ticket"),
       ),
       body: Center(
-        child: Text("body"),
+        child: _widgetOptions[_selectedIndex],
       ),
 
       bottomNavigationBar: BottomNavigationBar(
+        currentIndex: _selectedIndex,
+        onTap: _onItemTapped,
         elevation: 10,
         showSelectedLabels: false,
         showUnselectedLabels: false,
+        type: BottomNavigationBarType.fixed, // burda bottombarda itemsler tıklandığında kayıyordu. Kaymaması için bu satırı ekledik 
         selectedItemColor: Colors.blueGrey,
         unselectedItemColor: const Color(0xFF526480),
         items: const [
