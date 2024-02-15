@@ -42,7 +42,7 @@ class TicketView extends StatelessWidget {
                       
                       ),
                       Expanded(child: Container()), // bunun yerine bu kullanılabilir const Spacer(),
-                      const ThickContainer(isColor: true,),
+                      const ThickContainer(isColor: false,),
                       Expanded(child: Stack(
                         children: [
                         const SizedBox(
@@ -55,7 +55,7 @@ class TicketView extends StatelessWidget {
                         ],
                       )),
 
-                      const ThickContainer(isColor: true,),
+                      const ThickContainer(isColor: false,),
                       Expanded(child: Container()),
                       Text(ticket['to']['code'], style: isColor==true? Styles.headLineStyle3.copyWith(color: Colors.white): Styles.headLineStyle3),
                     ],

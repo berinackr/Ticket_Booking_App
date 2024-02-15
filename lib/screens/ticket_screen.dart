@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 import 'package:ticket_booking_app/screens/ticket_view.dart';
 import 'package:ticket_booking_app/utils/app_info_list.dart';
-import 'package:ticket_booking_app/utils/app_layout.dart';
+//import 'package:ticket_booking_app/utils/app_layout.dart';
 import 'package:ticket_booking_app/utils/app_styles.dart';
 import 'package:ticket_booking_app/widgets/column_layout.dart';
 import 'package:ticket_booking_app/widgets/layout_builder_widget.dart';
@@ -13,13 +13,13 @@ class TicketScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final size = AppLayout.getSize(context);
+    //final size = AppLayout.getSize(context);
     return Scaffold(
       backgroundColor: Styles.bgColor,
       body: Stack(
         children: [ 
           ListView(
-            padding: EdgeInsets.symmetric(horizontal: 20, vertical: 20),
+            padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 20),
             children: [
               const Gap(40),
               Text("Tickets", style: Styles.headLineStyle1,),
@@ -27,13 +27,13 @@ class TicketScreen extends StatelessWidget {
               const AppTicketTabs(firstTab: "Upcoming", secondeTab: "Previous"),
               const Gap(20),
               Container(
-                padding: EdgeInsets.only(left: 15),
+                padding: const EdgeInsets.only(left: 15),
                 child: TicketView(ticket: ticketList[0], isColor: false,),
               ),
               const SizedBox(height: 1,),
               Container(
                 padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 20),
-                margin: EdgeInsets.symmetric(horizontal: 15),
+                margin: const EdgeInsets.symmetric(horizontal: 15),
                 color: Colors.white,
                 child: Column(
                   children: [
@@ -126,8 +126,8 @@ class TicketScreen extends StatelessWidget {
                     bottomRight: Radius.circular(21),
                   ),
                 ),
-                margin: EdgeInsets.only(left: 15, right: 15),
-                padding: EdgeInsets.only(top: 15, bottom: 15),
+                margin: const EdgeInsets.only(left: 15, right: 15),
+                padding: const EdgeInsets.only(top: 15, bottom: 15),
                 child: Container(
                   padding: const EdgeInsets.symmetric(horizontal: 15),
                   child: ClipRRect(
@@ -145,7 +145,7 @@ class TicketScreen extends StatelessWidget {
               ),
               const Gap(20),
               Container(
-                padding: EdgeInsets.only(left: 15),
+                padding: const EdgeInsets.only(left: 15),
                 child: TicketView(ticket: ticketList[0], isColor: true,),
               ),
               
@@ -161,7 +161,7 @@ class TicketScreen extends StatelessWidget {
           left: 22,
           top: 295,
           child: Container(
-            padding: EdgeInsets.all(3),
+            padding: const EdgeInsets.all(3),
             decoration: BoxDecoration(
               shape: BoxShape.circle,
               border: Border.all(color: Styles.textColor, width: 2)
@@ -177,7 +177,7 @@ class TicketScreen extends StatelessWidget {
           right: 22,
           top: 295,
           child: Container(
-            padding: EdgeInsets.all(3),
+            padding: const EdgeInsets.all(3),
             decoration: BoxDecoration(
               shape: BoxShape.circle,
               border: Border.all(color: Styles.textColor, width: 2)
