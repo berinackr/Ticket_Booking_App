@@ -3,7 +3,7 @@
 
 This project includes the user interface of a ticket booking application developed using *Flutter*. This application provides users with an interface for travel bookings.
 
-## Program Images
+## 📱 Program Images
 
 <div>
     <img src="https://github.com/berinackr/Ticket_Booking_App/blob/main/screenshots/home.png" alt="home" width="200"/>
@@ -15,7 +15,7 @@ This project includes the user interface of a ticket booking application develop
     <img src="https://github.com/berinackr/Ticket_Booking_App/blob/main/screenshots/profil.png" alt="profil" width="200"/>
 </div>
 
-## Screens Details
+## 📄 Screens Details
 
 The `HomeScreen` class creates the home screen. This screen starts with a personal good morning message and offers the opportunity to specify tickets and accommodation by listing current or upcoming flights and accommodation. The home screen includes the continuum of searching and browsing activities using FluentUI icons.
 
@@ -25,9 +25,9 @@ The `TicketScreen` class represents a screen that displays the user's tickets. T
 
 The `ProfileScreen` class represents a screen that displays the user's profile retrieval and rewards. This screen includes information such as the user's profile picture, name, location, and premium status. It also shows users' earned rewards and accumulated miles.
 
-## NOTE
+## 📌 NOTE
 
 I made this project with the video on **dbestech** youTube channel. 
 
-If you want to try: https://youtu.be/71AsYo2q_0Y?si=iJPJJ3cNzBidX3QT
+📺 If you want to try: https://youtu.be/71AsYo2q_0Y?si=iJPJJ3cNzBidX3QT
 
