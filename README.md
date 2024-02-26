@@ -10,10 +10,13 @@ This project includes the user interface of a ticket booking application develop
     <img src="https://github.com/berinackr/Ticket_Booking_App/blob/main/screenshots/home2.png" alt="home_two" width="200"/>
     <img src="https://github.com/berinackr/Ticket_Booking_App/blob/main/screenshots/search.png" alt="search" width="200"/>
     <img src="https://github.com/berinackr/Ticket_Booking_App/blob/main/screenshots/search2.png" alt="search_two" width="200"/>
+</div>
+
+<div>  
     <img src="https://github.com/berinackr/Ticket_Booking_App/blob/main/screenshots/tickets.png" alt="tickets" width="200"/>
     <img src="https://github.com/berinackr/Ticket_Booking_App/blob/main/screenshots/tickets2.png" alt="tickets_two" width="200"/>
     <img src="https://github.com/berinackr/Ticket_Booking_App/blob/main/screenshots/profil.png" alt="profil" width="200"/>
-    <img src="https://github.com/berinackr/Ticket_Booking_App/blob/main/screenshots/profil2.png" alt="profil_two" width="300"/>
+    <img src="https://github.com/berinackr/Ticket_Booking_App/blob/main/screenshots/profil2.png" alt="profil_two" width="200"/>
 </div>
 
 ## Screens Details
